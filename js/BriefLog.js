@@ -5,8 +5,8 @@
  * 下面就是我对于这种情况做的一个简单的封装
  */
 var BriefLog = function(){
-    this.key = ""; // debug时的筛选标签
-    this.debug = false; // 默认处于debug状态,如果处于debug状态则打印日志信息
+    this.key = "BriefLog"; // debug时的筛选标签
+    this.debug = true; // 默认处于debug状态,如果处于debug状态则打印日志信息
     /* 发布到线上的时候,把allowDebugState置为false就行了 */
     var allowDebugState = true; // 是否允许传值修改debug状态
     // 获取传递的参数数量
