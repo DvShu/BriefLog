@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单的日志封装使用</title>
+    <!-- 引入日志插件 -->
+    <script src="js/BriefLog.js"></script>
+    <script>
+        window.onload = function () {
+            var briefLog = new BriefLog(true, "d");
+            briefLog.logs("log");
+            briefLog.warns("warn");
+            briefLog.errors("error");
+            briefLog.debugs("debug");
+            briefLog.info("info");
+            var obj = {"type" : "json"};
+            briefLog.logs(obj);
+            briefLog.logs(document.getElementById("btn"));
+        }
+    </script>
+    <button id="btn">按钮</button>
+</head>
+<body>
+
+</body>
+</html>
